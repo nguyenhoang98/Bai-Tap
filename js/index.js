@@ -17,6 +17,6 @@ document.getElementById("filter").onclick = function () {
 };
 window.onresize = function () {
   if (screen.width >= 1280) {
-    document.getElementsByClassName("control-panel")[0].style.display = "block";
+    document.getElementsByClassName("control-panel")[0].style.display = "grid";
   }
 };
