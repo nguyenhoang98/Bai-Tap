@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__left">
+        <div class="menu">
+          <div class="menu__logo">
+            <img src="./img/logo.png" class="img-logo" />
+            <span class="text-home">homes</span>
+          </div>
+          <div class="menu__link">
+            <ul>
+              <li class="menu__link__mobile">
+                <a href="#">List your property</a>
+              </li>
+              <li class="menu__link__mobile">
+                <a href="#">Trips</a>
+              </li>
+              <li class="menu__link__mobile">
+                <a href="#">Messages</a>
+              </li>
+              <li class="menu__link__mobile">
+                <img src="./img/doraemon.jpg" class="img-avatar" />
+                <span class="name">nguyễn văn hoàng</span>
+              </li>
+              <li id="action" class="menu__link__mobile">
+                <a href="javasript:void(0)"
+                  ><i class="fa fa-bars" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__setting">
+            <ul>
+              <li>
+                <a href="#">acccount</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+              <li>
+                <a href="#">Sign out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="search">
+          <div class="search-content">
+            <input
+              type="text"
+              class="input-search-mobile"
+              placeholder="Search by keyword"
+            />
+            <img src="./img/search-white.png" class="search-mobile-img" />
+            <button class="btn btn-filter" id="filter">
+              <img src="./img/filter.png" class="img-filter" />
+              Filter
+            </button>
+          </div>
+        </div>
+
+        <div class="control-panel">
+          <div class="grid-control-panel col-xl-12">
+            <div class="col col-xs-6 col-sm-3 col-lg-6 col-xl-6">
+              <label class="label">Beedrooms</label>
+              <select class="sl-xs-6 sl-sm-3 sl-md-3 sl-lg-6 sl-xl-6">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+            </div>
+            <div class="col col-xs-6 col-sm-3 col-lg-6 col-xl-6">
+              <label class="label">Bathrooms</label>
+              <select class="sl-xs-6 sl-sm-3 sl-md-3 sl-lg-6 sl-xl-6">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-lg-6 col-xl-12">
+              <label class="label">Price range</label>
+              <select class="sl-xs-12 sl-sm-6 sl-md-6 sl-lg-12 sl-xl-12">
+                <option value="">Up to 1000$/wk</option>
+                <option value="">Up to 2000$/wk</option>
+                <option value="">Up to 3000$/wk</option>
+                <option value="">Up to 4000$/wk</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-xl-12">
+            <label class="label">Protoperty type</label>
+            <div class="grid-control-panel">
+              <div class="col col-xs-12 col-sm-3 col-lg-12 col-xl-12">
+                <label class="container-radio"
+                  >House
+                  <input type="radio" checked="checked" name="radio" />
+                  <span class="checkmark-radio"></span>
+                </label>
+              </div>
+              <div class="col col-xs-12 col-sm-3 col-lg-12 col-xl-12">
+                <label class="container-radio"
+                  >Apartment
+                  <input type="radio" checked="checked" name="radio" />
+                  <span class="checkmark-radio"></span>
+                </label>
+              </div>
+              <div class="col col-xs-12 col-sm-3 col-lg-12 col-xl-12">
+                <label class="container-radio"
+                  >Loft
+                  <input type="radio" checked="checked" name="radio" />
+                  <span class="checkmark-radio"></span>
+                </label>
+              </div>
+              <div class="col col-xs-12 col-sm-3 col-lg-12 col-xl-12">
+                <label class="container-radio"
+                  >Townhouse
+                  <input type="radio" checked="checked" name="radio" />
+                  <span class="checkmark-radio"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-12">
+            <label class="label">Amenities</label>
+            <div class="grid-control-panel">
+              <div class="col col-xs-12 col-sm-3 col-lg-6 col-xl-12">
+                <label class="container-checkbox"
+                  >Balcony
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark-checkbox"></span>
+                </label>
+              </div>
+              <div class="col col-xs-12 col-sm-3 col-lg-6 col-xl-12">
+                <label class="container-checkbox"
+                  >Air conditioning
+                  <input type="checkbox" />
+                  <span class="checkmark-checkbox"></span>
+                </label>
+              </div>
+              <div class="col col-xs-12 col-sm-3 col-lg-6 col-xl-12">
+                <label class="container-checkbox"
+                  >Pool
+                  <input type="checkbox" />
+                  <span class="checkmark-checkbox"></span>
+                </label>
+              </div>
+              <div class="col col-xs-12 col-sm-3 col-lg-6 col-xl-12">
+                <label class="container-checkbox"
+                  >Beach
+                  <input type="checkbox" />
+                  <span class="checkmark-checkbox"></span>
+                </label>
+              </div>
+              <div class="col col-xs-12 col-sm-3 col-lg-6 col-xl-12">
+                <label class="container-checkbox"
+                  >Pet friendly
+                  <input type="checkbox" />
+                  <span class="checkmark-checkbox"></span>
+                </label>
+              </div>
+              <div class="col col-xs-12 col-sm-3 col-lg-6 col-xl-12">
+                <label class="container-checkbox"
+                  >Kid friendly
+                  <input type="checkbox" />
+                  <span class="checkmark-checkbox"></span>
+                </label>
+              </div>
+              <div class="col col-xs-12 col-sm-3 col-lg-6 col-xl-12">
+                <label class="container-checkbox"
+                  >Parking
+                  <input type="checkbox" />
+                  <span class="checkmark-checkbox"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container__right">
+        <div class="menu__desktop">
+          <div class="menu__desktop__search">
+            <input
+              type="text"
+              class="search__desktop"
+              placeholder="Search by keywords"
+            />
+            <img src="./img/search.webp" class="img-search" />
+          </div>
+          <div class="menu__desktop__link">
+            <ul>
+              <li>
+                <a href="#">List your property</a>
+              </li>
+              <li>
+                <a href="#">Trips</a>
+              </li>
+              <li>
+                <a href="#">Messages</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+              <li>
+                <img
+                  src="./img/doraemon.jpg"
+                  class="img-avatar img-avatar-desktop"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="content-title">
+            <h2>los angeles</h2>
+            <p>
+              Live like the stars in these luxurious Southern California
+              estates.
+              <span class="view-left">View all </span>
+            </p>
+          </div>
+          <div class="grid-content">
+            <div class="col col-xs-12 col-sm-6 col-lg-4 col-xl-4">
+              <img src="./img/home1.png" class="img-home" />
+              <div class="col-content-xs col-content-md">
+                <div class="col-content-status">
+                  <span class="plus">Plus</span>
+                  <ul class="col-content-list">
+                    <li>3 beds</li>
+                    <li>2 baths</li>
+                  </ul>
+                </div>
+                <div class="col-content-name">Modern home in city center</div>
+                <div class="col-content-price">
+                  $1,400 <span class="view">/wk</span>
+                </div>
+                <div class="col-content-rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span class="view">34 view</span>
+                </div>
+              </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-lg-4 col-xl-4">
+              <img src="./img/home2.png" class="img-home" />
+              <div class="col-content-xs col-content-md">
+                <div class="col-content-status">
+                  <span class="plus">Plus</span>
+                  <ul class="col-content-list">
+                    <li>3 beds</li>
+                    <li>2 baths</li>
+                  </ul>
+                </div>
+                <div class="col-content-name">Modern home in city center</div>
+                <div class="col-content-price">
+                  $1,400 <span class="view">/wk</span>
+                </div>
+                <div class="col-content-rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span class="view">34 view</span>
+                </div>
+              </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-lg-4 col-xl-4">
+              <img src="./img/home3.png" class="img-home" />
+              <div class="col-content-xs col-content-md col-content">
+                <div class="col-content-status">
+                  <span class="plus">Plus</span>
+                  <ul class="col-content-list">
+                    <li>3 beds</li>
+                    <li>2 baths</li>
+                  </ul>
+                </div>
+                <div class="col-content-name">Modern home in city center</div>
+                <div class="col-content-price">
+                  $1,400 <span class="view">/wk</span>
+                </div>
+                <div class="col-content-rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span class="view">34 view</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-title">
+            <h2>Phoenix</h2>
+            <p>
+              Escape the cold and enjoy great weather without breaking the bank.
+              <span class="view-left">View all </span>
+            </p>
+          </div>
+          <div class="grid-content">
+            <div class="col col-xs-12 col-sm-6 col-lg-4 col-xl-4">
+              <img src="./img/home4.png" class="img-home" />
+              <div class="col-content-xs col-content-md">
+                <div class="col-content-status">
+                  <span class="plus">Plus</span>
+                  <ul class="col-content-list">
+                    <li>3 beds</li>
+                    <li>2 baths</li>
+                  </ul>
+                </div>
+                <div class="col-content-name">Modern home in city center</div>
+                <div class="col-content-price">
+                  $1,400 <span class="view">/wk</span>
+                </div>
+                <div class="col-content-rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span class="view">34 view</span>
+                </div>
+              </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-lg-4 col-xl-4">
+              <img src="./img/home5.png" class="img-home" />
+              <div class="col-content-xs col-content-md">
+                <div class="col-content-status">
+                  <span class="plus">Plus</span>
+                  <ul class="col-content-list">
+                    <li>3 beds</li>
+                    <li>2 baths</li>
+                  </ul>
+                </div>
+                <div class="col-content-name">Modern home in city center</div>
+                <div class="col-content-price">
+                  $1,400 <span class="view">/wk</span>
+                </div>
+                <div class="col-content-rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span class="view">34 view</span>
+                </div>
+              </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-lg-4 col-xl-4">
+              <img src="./img/home6.png" class="img-home" />
+              <div class="col-content-xs col-content-md">
+                <div class="col-content-status">
+                  <span class="plus">Plus</span>
+                  <ul class="col-content-list">
+                    <li>3 beds</li>
+                    <li>2 baths</li>
+                  </ul>
+                </div>
+                <div class="col-content-name">Modern home in city center</div>
+                <div class="col-content-price">
+                  $1,400 <span class="view">/wk</span>
+                </div>
+                <div class="col-content-rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span class="view">34 view</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
