@@ -19,4 +19,8 @@ window.onresize = function () {
   if (screen.width >= 1280) {
     document.getElementsByClassName("control-panel")[0].style.display = "grid";
   }
+  if (screen.width < 1280 && screen.width >= 1024) {
+    document.getElementsByClassName("control-panel")[0].style.display = "grid";
+  }
 };
+
