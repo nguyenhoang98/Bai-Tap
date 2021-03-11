@@ -339,6 +339,7 @@ html{
 /*  */
 
 .control-panel{
+    width:375px ;
     background : #2D3748 ; 
     color:white ;
     padding:10px ;
